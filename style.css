@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+#background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -10;
+}
+
+#overlay{
+    position: fixed;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Assets/transparent-plastic-texture-PNG.png);
+    z-index: -9;
+}
+
+#navBar{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* border: 2px solid #fff; */
+}
+
+#navBar nav{
+    width: 100%;
+    height: 150px;
+    /* background-color: #dadada; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+}
+
+#navBar nav #list{
+    display: flex;
+    align-items: center;
+}
+
+#list a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 11px;
+    color: #fff;
+}
+
+#navBar nav img{
+    width: 100px;
+    cursor: pointer;
+}
+
+#navBar nav>img{
+    width: 100px;
+    cursor: pointer;
+}
+
+#navBar>p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 60px;
+}
+
+#down{
+    width: 100%;
+}
+
+#down #image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#down #image img{
+    width: 350px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+#text p{
+    width: 40%;
+    color: white;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#text .photo{
+    opacity: 0;
+}
